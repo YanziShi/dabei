@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.qckj.dabei.view.ActionBar
+        android:id="@+id/activity_browser_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="text_title|button_left|button_right"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:srcRight="@mipmap/ic_share"
+        app:text_title="@string/app_name" />
+
+    <ProgressBar
+        android:id="@+id/custom_webView_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/bg_browser_loading_progressbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:src="@mipmap/knowledge_net_failed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="89dp"
+                android:text="网络不给力"
+                android:textColor="#808080"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/custom_webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

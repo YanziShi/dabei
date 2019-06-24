@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_bg">
+
+    <com.qckj.dabei.view.ActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="text_title|button_left"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:text_title="评价"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1"/>
+
+    <EditText
+        android:id="@+id/edtComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="145dp"
+        android:layout_margin="16dp"
+        android:gravity="top"
+        android:padding="8dp"
+        android:background="@drawable/bg_no_circlel"
+        android:textSize="15sp"
+        android:hint="请输入评论" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+    <Button
+        android:id="@+id/btnComment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/button_orange_corner"
+        android:text="提交"
+        android:textSize="14sp"
+        android:textColor="@android:color/white" />
+    </FrameLayout>
+</LinearLayout>

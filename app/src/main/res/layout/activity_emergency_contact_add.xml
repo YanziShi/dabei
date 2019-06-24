@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title|text_right"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:text_right="@string/commit"
+        app:text_title="@string/mine_emergency_contact_add" />
+
+    <EditText
+        android:id="@+id/input_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_bg_shape"
+        android:hint="@string/mine_emergency_contact_name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:nextFocusForward="@id/input_contact_phone"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="14sp"
+        tools:ignore="AutoFill" />
+
+    <EditText
+        android:id="@+id/input_contact_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_bg_shape"
+        android:hint="@string/mine_emergency_contact_phone"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="14sp"
+        tools:ignore="AutoFill" />
+
+</LinearLayout>

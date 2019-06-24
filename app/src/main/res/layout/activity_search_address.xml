@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_bg">
+
+    <com.qckj.dabei.view.ActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="text_title|button_left"
+        app:text_title="搜索地址"
+        app:srcLeft="@drawable/back_bg_selector"/>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_demand_bg"
+            android:padding="10dp"
+            android:hint="请输入地址"
+            android:textCursorDrawable="@drawable/et_cusar"
+            android:textSize="14sp"
+            android:drawableLeft="@mipmap/ic_search"
+            android:drawablePadding="2dp"
+            android:layout_margin="5dp"/>
+
+
+
+    <com.qckj.dabei.view.listview.PullRefreshView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line"
+        android:background="@color/white"/>
+
+
+</LinearLayout>

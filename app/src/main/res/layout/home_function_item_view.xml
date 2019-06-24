@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@+id/function_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/icon_more_service_business" />
+
+    <TextView
+        android:id="@+id/function_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="餐饮"
+        android:layout_marginBottom="10dp"
+        android:textSize="13sp"/>
+
+</LinearLayout>

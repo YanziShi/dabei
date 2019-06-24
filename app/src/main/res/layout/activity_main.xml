@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_item_ll" />
+
+    <LinearLayout
+        android:id="@+id/tab_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.qckj.dabei.view.TabItemView
+                android:id="@+id/tab_home_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:itemIcon="@mipmap/ic_home_normal"
+                app:itemIconSelected="@mipmap/ic_tabbar_home_selected"
+                app:itemText="@string/app_home" />
+
+            <com.qckj.dabei.view.TabItemView
+                android:id="@+id/tab_lib_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:itemIcon="@mipmap/ic_demand_library_normal"
+                app:itemIconSelected="@mipmap/ic_tabbar_information_selected"
+                app:itemText="@string/app_demand_library" />
+
+            <com.qckj.dabei.view.TabItemView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.qckj.dabei.view.TabItemView
+                android:id="@+id/tab_nearby_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:itemIcon="@mipmap/ic_nearby_normal"
+                app:itemIconSelected="@mipmap/ic_tabbar_nearby_selected"
+                app:itemText="@string/app_nearby" />
+
+            <com.qckj.dabei.view.TabItemView
+                android:id="@+id/tab_mine_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:itemIcon="@mipmap/ic_mine_normal"
+                app:itemIconSelected="@mipmap/ic_tabbar_me_selected"
+                app:itemText="@string/app_mine" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.qckj.dabei.view.TabItemView
+        android:id="@+id/tab_release_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:itemIcon="@mipmap/ic_tabbar_release_default"
+        app:itemIconSelected="@mipmap/ic_tabbar_release_default"
+        app:itemText="@string/app_release_demand" />
+
+</RelativeLayout>

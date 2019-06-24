@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.qckj.dabei.view.ActionBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:function="button_left|text_title"
+            app:srcLeft="@drawable/back_bg_selector"
+            app:text_title="@string/merchant_center" />
+        <Switch
+            android:id="@+id/switch_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/user_info_rl"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/mine_head_bg_shape"
+                android:orientation="horizontal">
+
+                <com.qckj.dabei.view.image.CircleImageView
+                    android:id="@+id/user_head_portrait"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/user_head_portrait"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:text="大贝" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/is_auth_view"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/is_auth"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/member_grade_view"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/member_grade" />
+                        <ImageView
+                            android:id="@+id/is_gold_business"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/is_gold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.qckj.dabei.view.CommonItemView
+                android:id="@+id/shop_edit_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemTitle="@string/merchant_center_shop_edit" />
+
+            <com.qckj.dabei.view.CommonItemView
+                android:id="@+id/shop_pre_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemTitle="@string/merchant_center_shop_preview" />
+
+            <com.qckj.dabei.view.CommonItemView
+                android:id="@+id/mine_service_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemTitle="@string/merchant_center_mine_service" />
+
+            <com.qckj.dabei.view.CommonItemView
+                android:id="@+id/auth_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemTitle="@string/merchant_center_auth_info" />
+
+            <com.qckj.dabei.view.CommonItemView
+                android:id="@+id/shop_stick_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemContent="未置顶"
+                app:itemTitle="@string/merchant_center_shop_stick" />
+
+            <com.qckj.dabei.view.CommonItemView
+                android:id="@+id/opening_gold_merchants_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemContent="未开通"
+                app:itemTitle="@string/merchant_center_opening_gold_merchants" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

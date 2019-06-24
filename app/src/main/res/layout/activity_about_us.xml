@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77EDEDED"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:text_title="关于我们" />
+
+    <TextView
+        android:id="@+id/version_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:drawablePadding="5dp"
+        android:textSize="13sp"
+        tools:text="版本：1.0.0" />
+
+    <com.qckj.dabei.view.CommonItemView
+        android:id="@+id/app_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:arrowVisible="true"
+        app:itemContent="www.dabei.com"
+        app:itemTitle="大贝官网"
+        app:lineVisible="true" />
+
+    <com.qckj.dabei.view.CommonItemView
+        android:id="@+id/app_service_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrowVisible="true"
+        app:itemContent="0851-85555809"
+        app:itemTitle="客服电话"
+        app:lineVisible="false" />
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.qckj.dabei.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title"
+        app:srcLeft="@drawable/back_bg_selector" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linear_category_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <RelativeLayout
+            android:id="@+id/btn_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="餐饮"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@drawable/nearby_head_text_bg_selector"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_array_down"
+                android:layout_toRightOf="@+id/tv_category"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_advice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="推荐"
+            android:gravity="center"
+            android:textColor="@drawable/nearby_head_text_bg_selector"/>
+        <TextView
+            android:id="@+id/tv_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="最新"
+            android:gravity="center"
+            android:textColor="@drawable/nearby_head_text_bg_selector"/>
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="距离"
+            android:gravity="center"
+            android:textColor="@drawable/nearby_head_text_bg_selector"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <com.qckj.dabei.view.listview.PullRefreshView
+        android:id="@+id/pull_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_marginTop="41dp"/>
+    <ListView
+        android:id="@+id/list_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:background="#ddffffff"
+        android:visibility="gone">
+
+    </ListView>
+</FrameLayout>
+
+
+</LinearLayout>

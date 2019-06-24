@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title|text_right"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:text_title="@string/mine_emergency_contact"
+        app:text_right="添加"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg">
+
+        <com.qckj.dabei.view.listview.PullRefreshView
+            android:id="@+id/emergency_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/line"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="22dip"
+            android:gravity="center"
+            android:text="暂无记录"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

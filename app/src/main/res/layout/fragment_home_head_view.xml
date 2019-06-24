@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ProportionLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scaleSize="0.5">
+
+        <com.qckj.dabei.view.banner.AutoBannerView
+            android:id="@+id/banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.qckj.dabei.view.ProportionLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_view_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热门商家"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+
+</LinearLayout>

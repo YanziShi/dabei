@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:text_title="@string/home_er_code_scan" />
+
+    <SurfaceView
+        android:id="@+id/er_code_scan_pre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar" />
+
+    <com.qckj.dabei.view.camera.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar" />
+
+    <TextView
+        android:id="@+id/tip_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar"
+        android:layout_marginTop="46.67dp"
+        android:background="#00000000"
+        android:gravity="center_horizontal"
+        android:text="@string/set_richscan_box_tip"
+        android:textColor="#929292"
+        android:textSize="12sp" />
+
+</RelativeLayout>

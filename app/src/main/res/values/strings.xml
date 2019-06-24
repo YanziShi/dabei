@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">大贝</string>
+
+    <string name="toast_time_out">当前网络不顺畅，请检查网络</string>
+    <string name="toast_net_error">当前没有网络，请检查网络是否开启</string>
+    <string name="toast_service_error">服务器异常，请重试</string>
+
+    <string name="app_home">首页</string>
+    <string name="app_demand_library">需求库</string>
+    <string name="app_nearby">服务商</string>
+    <string name="app_mine">我的</string>
+    <string name="app_release_demand">发布</string>
+
+    <string name="exit_application">再按一次退出应用</string>
+
+    <string name="mine_resource">资源库</string>
+    <string name="mine_order">我的订单</string>
+    <string name="mine_message">我的消息</string>
+    <string name="system_message">系统消息</string>
+    <string name="mine_earning">我的收益</string>
+    <string name="mine_evaluate">我的评价</string>
+    <string name="is_auth">是否认证</string>
+    <string name="is_gold">金牌商家</string>
+    <string name="member_grade">会员等级</string>
+    <string name="mine_auth_center">认证中心</string>
+    <string name="mine_apply_agent">申请代理商</string>
+    <string name="mine_join_partner">加入合伙人</string>
+    <string name="mine_invite_friend">邀请好友</string>
+    <string name="mine_emergency_contact">紧急联系人</string>
+    <string name="mine_emergency_contact_add">新增紧急联系人</string>
+    <string name="mine_emergency_contact_new_add">添加紧急联系人</string>
+    <string name="mine_emergency_contact_name">请输入联系人姓名</string>
+    <string name="mine_emergency_contact_phone">请输入联系人电话</string>
+    <string name="mine_emergency_contact_list">紧急联系人列表</string>
+    <string name="mine_emergency_contact_empty">请填写紧急联系人姓名</string>
+    <string name="mine_emergency_phone_empty">请填写紧急联系人电话</string>
+    <string name="mine_emergency_phone_error">紧急联系人电话错误</string>
+    <string name="mine_about_us">关于我们</string>
+    <string name="mine_complaint_feedback">投诉反馈</string>
+    <string name="change_record">兑换记录</string>
+
+    <string name="mine_login_and_register">登录 / 注册</string>
+    <string name="mine_info">个人资料</string>
+    <string name="tip_sure">确定</string>
+
+    <string name="merchant_center">商家中心</string>
+    <string name="merchant_center_shop_edit">店铺编辑</string>
+    <string name="merchant_center_shop_preview">店铺预览</string>
+    <string name="merchant_center_mine_service">我的服务</string>
+    <string name="merchant_center_auth_info">认证信息</string>
+    <string name="merchant_center_shop_stick">店铺置顶</string>
+    <string name="merchant_center_opening_gold_merchants">开通金牌商家</string>
+    <string name="mine_share">分享</string>
+    <string name="commit">提交</string>
+    <string name="nearby_search_demand">搜索您的需求</string>
+
+    <string name="tip_title">提示</string>
+    <string name="mine_exit_login">退出登录</string>
+    <string name="setting_yes">已设置</string>
+    <string name="setting_no">未设置</string>
+
+    <string name="url_wrong_check_you_url">该页面不存在，请检查你的地址</string>
+
+    <string name="permission_tip_location">大贝需要获取您的位置权限，如果您拒绝，将无法使用个性化推荐、定位等功能！</string>
+    <string name="permission_tip_camera">大贝需要获取您的相机权限，用于拍照、扫一扫等功能。如果您拒绝，将无法使用扫一扫等功能！</string>
+    <string name="set_richscan_box_tip">请将二维码/条形码置于取景器内扫描,距离大约\n10cm,尽量避免反光</string>
+    <string name="set_richscan_gsm_bg_tip">请将条码置于取景器内扫描，距离大约10CM，尽量避免反光</string>
+
+    <string name="location_dialog_title">打开“定位服务”，来允许“大贝”确定您的位置</string>
+    <string name="location_dialog_message">请在手机"定位服务->访问我的位置信息"选项中，允许大贝访问你的位置信息</string>
+    <string name="location_dialog_to_set">去设置</string>
+    <string name="location_dialog_i_know">我知道了</string>
+
+    <string name="location_dialog_auth_title">打开大贝“位置”权限，为您提供个性化推荐</string>
+    <string name="location_dialog_auth_message">请在手机设置"应用信息->权限->您的位置"选项中，允许大贝访问你的位置信息</string>
+
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载&#8230;</string>
+    <string name="refresh_pull_to_refresh">下拉可以刷新&#8230;</string>
+    <string name="refresh_release_to_refresh">松开可以刷新&#8230;</string>
+    <string name="refresh_refreshing">正在努力加载中&#8230;</string>
+
+    <string name="home_transaction_info_tip_head">恭喜%s</string>
+    <string name="home_transaction_info_tip_content">于%s完成%s订单</string>
+    <string name="home_brand_partner">大牌来了</string>
+    <string name="home_boutique_recommend">商家活动</string>
+    <string name="more">更多</string>
+
+    <string name="home_er_code_scan">二维码</string>
+    <string name="permission_msg_camera_failed">相机权限已被禁止!</string>
+
+    <string name="mine_login">登录</string>
+    <string name="mine_go_go">去逛逛>></string>
+    <string name="mine_login_btn">登 录</string>
+    <string name="mine_account_password_login">账号密码登录</string>
+    <string name="mine_verification_code_login">验证码快捷登录</string>
+    <string name="mine_other_way_login">其他方式登录</string>
+    <string name="mine_login_agreement">登录即表示同意 《大贝用户服务协议》</string>
+    <string name="mine_qq_login">QQ登录</string>
+    <string name="mine_login_wx">微信登录</string>
+    <string name="app_cancel">取消</string>
+    <string name="mine_phone">手机号</string>i
+    <string name="mine_verification_code">获取验证码</string>
+    <string name="mine_verification_code_time">%d秒后重试</string>
+    <string name="start_advertise_time">%d秒后进入</string>
+    <string name="mine_verification_code_again">重新获取验证码</string>
+    <string name="mine_verification_code_info">验证码</string>
+    <string name="mine_login_message_verification_code">短信验证码登录</string>
+    <string name="mine_login_message_account_pwd">账号密码登录</string>
+    <string name="mine_password">密    码</string>
+    <string name="mine_password_forget">忘记密码</string>
+    <string name="mine_input_verification_code">请输入验证码</string>
+    <string name="mine_input_phone_number">请输入手机号</string>
+    <string name="mine_old_password">旧密码</string>
+    <string name="mine_new_password">新密码</string>
+    <string name="mine_input_old_password">输入旧密码</string>
+    <string name="mine_input_new_password">输入新密码</string>
+    <string name="mine_confirm_new_password">确认新密码</string>
+    <string name="mine_confirm_new_password_again">请再次确认新密码</string>
+    <string name="mine_login_reg">登录/注册</string>
+    <string name="mine_app_user_name">大贝用户</string>
+    <string name="mine_bind_phone">绑定手机号</string>
+    <string name="mine_again_bind_phone">换绑手机号</string>
+    <string name="mine_bind_phone_no">未绑定手机号</string>
+    <string name="mine_head_portrait">头像</string>
+    <string name="mine_take_photo">相机</string>
+    <string name="mine_select_picture">从手机相册选择</string>
+    <string name="dismiss">取消</string>
+
+    <string name="mine_sex_male">男</string>
+    <string name="mine_sex_female">女</string>
+    <string name="mine_sex_no">未知</string>
+
+    <string name="insert_sdcard">对不起，请插入SD卡</string>
+    <string name="not_support">本设备系统不支持该操作</string>
+
+    <string name="mine_modify_name">修改昵称</string>
+    <string name="mine_user_name">用户昵称</string>
+    <string name="finish">完成</string>
+
+    <string name="now_location_text">当前城市：</string>
+
+    <string name="title_select_city">请选择城市</string>
+    <string name="right_save">保存</string>
+    <string name="wen_xing_ti_shi">大贝提醒您：\n1.大贝不承担任何交易损失，请谨慎判断相关信息的真实性\n2.建议不要在交易前向对方转账\n3.如有问题，请及时拨打客服热线0851-85555809</string>>
+    <string name="beizhu_hint">1.被邀请的用户首次登录APP，奖励1000贝珠。\n2.发布一条需求奖励100贝珠。\n3.邀请一个好友成功注册，奖励邀请人200贝珠。\n4.完成一次需求服务提供奖励100贝珠。</string>
+    <string name="balance_hint">1.余额提现。\n2.余额线上消费，余额大于等于消费金额时，可直接采用余额支付，余额小于消费金额时，用户可选择余额抵扣一部分消费金额</string>
+</resources>

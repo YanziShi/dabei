@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="7.5dp">
+        <LinearLayout
+            android:id="@+id/group_left_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_light_gray_circle">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/navigationbar_icon_address"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/cur_location"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="贵阳市"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toEndOf="@id/group_left_location"
+            android:background="@drawable/bg_light_gray_circle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableStart="@mipmap/navigationbar_icon_search"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/nearby_search_demand"
+                android:textColor="@color/gray"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/er_code_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/navigation_ic_scan"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/line" />
+
+    <com.qckj.dabei.view.listview.PullRefreshView
+        android:id="@+id/home_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

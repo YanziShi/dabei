@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qckj.dabei.view.ActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title"
+        app:text_title="服务详情"
+        app:srcLeft="@drawable/back_bg_selector"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/goods_iv"
+        android:src="@mipmap/ic_empty_data"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/price_tv"
+        android:text="300/元"
+        android:textColor="@color/table_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/name_tv"
+        android:text="蛋糕"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/adress_tv"
+        android:text="地址"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="13dp"
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/store_service_tv"
+            android:layout_gravity="center_vertical"
+            android:text="相关服务"
+            android:textSize="16sp"
+            android:textColor="@color/statue_color"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/line_color"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/store_detail_tv"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="5dp"
+            android:text="详情介绍"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="暂无数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

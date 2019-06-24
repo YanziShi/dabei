@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="text_title"
+        app:text_title="@string/app_demand_library" />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/synthesis_item"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/nearby_head_rb_selector"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="综合"
+                    android:textColor="@drawable/nearby_head_text_bg_selector"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/newest_item"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/nearby_head_rb_selector"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="最新"
+                    android:textColor="@drawable/nearby_head_text_bg_selector"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/nearby_item"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/nearby_head_rb_selector"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="附近"
+                    android:textColor="@drawable/nearby_head_text_bg_selector"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/filtrate_item"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/nearby_head_rb_selector"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="筛选"
+                    android:textColor="@drawable/nearby_head_text_bg_selector"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/demand_lib_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/common_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white"
+                app:tl_indicator_color="@color/bg_yellow_end"
+                app:tl_indicator_width="80dp"
+                app:tl_textSelectColor="#404040"
+                app:tl_textUnselectColor="#2B2B2B"
+                app:tl_textsize="14sp" />
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

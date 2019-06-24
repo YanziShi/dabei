@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ActionBar">
+        <attr name="text_title" format="reference|string" />
+        <attr name="text_right" format="reference|string" />
+        <attr name="mBackground" format="reference" />
+        <attr name="srcRight" format="reference" />
+        <attr name="srcLeft" format="reference" />
+        <attr name="function">
+            <flag name="button_left" value="1" />
+            <flag name="button_right" value="2" />
+            <flag name="text_title" value="4" />
+            <flag name="text_right" value="8" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CommonItemView">
+        <attr name="itemTitle" format="reference|string" />
+        <attr name="itemContent" format="reference|string" />
+        <attr name="arrowVisible" format="boolean" />
+        <attr name="lineVisible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TabItemView">
+        <attr name="itemIcon" format="reference" />
+        <attr name="itemIconSelected" format="reference" />
+        <attr name="itemText" format="reference|string" />
+        <attr name="itemTextColor" format="color" />
+        <attr name="itemTextColorSelected" format="color" />
+        <attr name="isItemSelected" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="image_src" format="reference"/>
+        <attr name="imageShape">
+            <enum name="circled" value="0"/>
+            <enum name="rounded" value="1"/>
+            <enum name="normal" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProportionLayout">
+        <attr name="scaleSize" format="float"/>
+        <attr name="isAdaptive" format="boolean"/>
+        <attr name="pplayoutorientation">
+            <enum name="HORIZONTAL" value="0"/>
+            <enum name="VERTICAL" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AutoBannerView">
+        <attr name="dotGravity" format="enum">
+            <enum name="left" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+        <attr name="waitMilliSecond" format="integer"/>
+        <attr name="dotMargin" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RollingView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color|reference" />
+    </declare-styleable>
+
+</resources>

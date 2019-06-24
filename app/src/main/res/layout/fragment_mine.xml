@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="text_title"
+        app:text_title="@string/app_mine" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/user_info_rl"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/mine_head_bg_shape"
+                android:orientation="horizontal">
+
+                <com.qckj.dabei.view.image.CircleImageView
+                    android:id="@+id/user_head_portrait"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_mine_default_user_photo" />
+
+                <LinearLayout
+                    android:id="@+id/user_info_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toStartOf="@id/merchant_center_btn"
+                    android:layout_toEndOf="@id/user_head_portrait"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:text="登录开启我的大贝旅程" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/is_auth_view"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/is_auth"
+                            android:visibility="gone"
+                            android:scaleType="fitXY"/>
+
+                        <ImageView
+                            android:id="@+id/member_grade_view"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:contentDescription="@string/member_grade"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"/>
+                        <ImageView
+                            android:id="@+id/is_gold_business"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:contentDescription="@string/is_gold"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/merchant_center_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/mine_merchant_center_bg_shape"
+                    android:gravity="end"
+                    android:paddingStart="11dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="11dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/merchant_center"
+                    android:textColor="#717171"
+                    android:textSize="11sp"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_bg"
+                android:orientation="vertical">
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_resource_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_resource"
+                    app:itemContent="0条"/>
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_order_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_order" />
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_message_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_message"
+                    app:itemContent="0条"/>
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_earning_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_earning" />
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_evaluate_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_evaluate"
+                    app:lineVisible="false" />
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_auth_center_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:itemTitle="@string/mine_auth_center" />
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_apply_agent_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_apply_agent" />
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_join_partner_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_join_partner"
+                    app:itemContent="未加入"/>
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_invite_friend_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_invite_friend" />
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_emergency_contact_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemContent="未添加"
+                    app:itemTitle="@string/mine_emergency_contact"
+                    app:lineVisible="false" />
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_about_us_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:itemTitle="@string/mine_about_us" />
+
+                <com.qckj.dabei.view.CommonItemView
+                    android:id="@+id/mine_complaint_feedback_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@string/mine_complaint_feedback"
+                    app:lineVisible="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

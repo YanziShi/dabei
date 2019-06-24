@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="text_title|button_left|text_right"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:text_title="贝珠"
+        app:text_right="贝珠明细"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可兑换贝珠（个）"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/text_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="28sp"
+        android:text="8888"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="立即兑换"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_orange_corner"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示：服务过程中收到用户投诉者，贝币将清零"
+        android:textSize="12sp"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/app_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="如何获取贝珠?"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beizhu_hint"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="5dp"/>
+
+</LinearLayout>

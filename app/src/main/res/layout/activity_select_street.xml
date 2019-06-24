@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="text_title|button_left"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:text_title="选择街道">
+
+    </com.qckj.dabei.view.ActionBar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/line">
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="left"
+            android:padding="10dp"
+            android:drawablePadding = "5dp"
+            android:hint="请输入搜索内容"
+            android:background="@drawable/search_demand_bg"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:drawableLeft="@mipmap/ic_search"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null">
+
+    </ListView>
+
+</LinearLayout>

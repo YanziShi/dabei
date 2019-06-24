@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qckj.dabei.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title|text_right"
+        app:srcLeft="@drawable/back_bg_selector"
+        app:text_title="请选择城市"
+        app:text_right="保存">
+    </com.qckj.dabei.view.ActionBar>
+
+    <LinearLayout
+        android:id="@+id/group_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/main_yellow"
+                android:layout_gravity="center_vertical"
+                android:text="@string/now_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/now_adress_tv"
+                android:layout_gravity="center_vertical"
+                android:text="贵阳市"
+                android:textColor="@color/main_yellow"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/font_flag" />
+        <GridView
+            android:layout_marginTop="10dp"
+            android:id="@+id/adress_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp">
+        </GridView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="当前区县："
+                android:textColor="@color/main_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/now_district_tv"
+                android:layout_gravity="center_vertical"
+                android:text="南明区"
+                android:textColor="@color/main_yellow"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/district_checkbox"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:button="@null"
+                android:drawableRight="@drawable/icon_array_up"
+                android:text="选择区县"
+                android:layout_marginRight="13dp"
+                android:textColor="#555C66"/>
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/font_flag" />
+        <GridView
+            android:layout_marginTop="10dp"
+            android:id="@+id/district_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp">
+        </GridView>
+    </LinearLayout>
+</LinearLayout>

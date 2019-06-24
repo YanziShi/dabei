@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="red">#ff0000</color> <!-- 红色 -->
+    <color name="greed">#00cc00</color> <!-- 绿色 -->
+    <color name="white">#ffffff</color> <!-- 白色 -->
+    <color name="gray">#808080</color> <!-- 灰色 -->
+    <color name="light_gray">#eeeeee</color> <!-- 灰色 -->
+    <color name="blue">#4169E1</color> <!-- 蓝色 -->
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_yellow">#FECE2F</color>
+    <color name="font_flag">#e6e6e6</color>
+
+    <color name="app_bg">#EDEDED</color>
+    <color name="line">#DDDDDD</color>
+
+    <color name="common_pressed">#11222222</color>
+
+    <color name="bg_yellow_start">#FAED42</color>
+    <color name="bg_yellow_end">#fece2f</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="nearby_head_btn">#fece2f</color>
+    <color name="nearby_head_text">#323232</color>
+
+
+        <color name="bg_bar_red">#ff3333</color>
+
+
+        <!-- 线线颜色-->
+        <color name="stroke_line">#c6c3c3</color>
+        <color name="table_line">#e6e6e6</color>
+
+
+        <color name="background_yellow">#fbd415</color>
+        <color name="textcolor_black">#163045</color>
+
+        <color name="textcolor_green">#13ae70</color>
+        <color name="text_color_000000">#000000</color>
+        <color name="text_color">#171616</color>
+
+        <color name="alpha_0">#00000000</color>
+
+        <color name="main_color">#13C2C2</color> <!-- app主题色 -->
+        <color name="main_btn_color">#ffa03c</color>
+
+        <color name="main_call_color">#e97324</color>
+
+
+        <color name="table_color">#FECE2F</color>
+        <color name="table_text_color">#323232</color>
+        <color name="color_press_bg">#fef0e9</color>
+        <color name="search_color">#b1adab</color>
+        <color name="bg_whole">#f2f2f2</color>
+
+        <color name="font_line">#dcdcdc</color>
+        <color name="statue_color">#4D4D4D</color>
+        <color name="more_color">#999999</color>
+        <color name="line_color">#EDEDED</color>
+        <color name="list_color">#cecbcb</color>
+        <color name="content">#7E7E7E</color>
+        <color name="uprepaid_color">#ff3e3e</color>
+        <color name="title2">#a2a2a2</color>
+
+</resources>

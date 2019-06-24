@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_classify"
+            android:layout_width="100dp"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/list_color"
+            android:scrollbars="none" />
+    </LinearLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>
